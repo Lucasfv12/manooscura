@@ -135,7 +135,15 @@ main{padding-top:60px;}
 .lb-nav{position:absolute;top:50%;transform:translateY(-50%);background:transparent;border:1px solid #222;color:var(--off);width:46px;height:46px;cursor:pointer;font-size:18px;display:flex;align-items:center;justify-content:center;transition:all 0.2s;}
 .lb-nav:hover{border-color:var(--green);color:var(--green);}
 .lb-nav.p{left:1.5rem;}.lb-nav.n{right:1.5rem;}
-@media(max-width:580px){.g-item.wide{grid-column:span 1;aspect-ratio:4/3;}.card-slot{width:110px;}}
+@media(max-width:580px){
+  .g-item.wide{grid-column:span 1;aspect-ratio:4/3;}
+  .card-slot{width:110px;}
+  nav{flex-direction:column;align-items:center;gap:0.5rem;padding:0.75rem 1rem;}
+  .nav-logo{font-size:1.1rem;}
+  .nav-links{display:flex;flex-wrap:wrap;justify-content:center;gap:0.8rem;}
+  .nav-btn{font-size:10px;letter-spacing:1px;}
+  main{padding-top:90px;}
+}
 
 #intro > *:not(:first-child){position:relative;z-index:1;}
 </style>
